@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="595.css">
     <link rel="stylesheet" type="text/css" href="66d.css">
     <link rel="stylesheet" type="text/css" href="0b4.css">
-
 </head>
 <body class="html5 nologin language-large-font">
 <div id="top_bar" class="clearfix">
@@ -38,30 +37,8 @@
             <input type="hidden" name="login_token"
                    value="$1$eb37b05f579b65752994c2f424f0e715f57991b625caf36b1c891b77cb025865@swi5yu"></form>
     </div>
-    <script>
-        document.getElementById("login_form").addEventListener("submit", function(event) {
-            event.preventDefault(); // 阻止表單送出
-
-            // 取得輸入的值
-            var account = document.getElementById("input_nick_name").value;
-            var password = document.getElementById("input_password").value;
-
-            // 正則表達式：
-            // 帳號：只能英文字母或數字，長度 4~12
-            var accountRegex = /^[A-Za-z0-9]{4,12}$/;
-
-            // 密碼：必須英文字母與數字混合，長度 6~16
-            var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,16}$/;
-
-            // 驗證帳號與密碼
-            if (!accountRegex.test(account) || !passwordRegex.test(password)) {
-                alert("帳號或密碼格式錯誤");
-            } else {
-                alert("登入成功!!\n帳號：" + account + "\n密碼：" + password);
-            }
-        });
-    </script>
-
+<!--    引入login.js-->
+    <script src="login.js"></script>
     <footer class="clearfix">
         <div id="footer">
             <ul>
