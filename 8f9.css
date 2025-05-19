@@ -418,7 +418,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(https://s.plurk.com/plurktop/cca928a76ee289889847.jpg);
+    background: url(background.jpg);
     background-position: center 63%;
     background-size: cover;
     background-attachment: fixed;
@@ -451,12 +451,12 @@ body {
         min-height: 600px;
     }
 }
-#plurk-forum {
-    background: url(https://s.plurk.com/plurktop/270e650f283151a7fcf3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*#plurk-forum {*/
+/*    background: url(https://s.plurk.com/plurktop/270e650f283151a7fcf3.jpg);*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
 #plurk-forum .desc h3 {
     text-shadow: 1px 1px 4px rgba(35, 74, 89, 0.75);
 }
@@ -464,10 +464,10 @@ body {
     background: #FFF;
     color: #5fadb9;
 }
-#anonymous {
-    flex-wrap: wrap;
-    background: url(https://s.plurk.com/plurktop/6b393589b1d3b4aa0499.png);
-}
+/*#anonymous {*/
+/*    flex-wrap: wrap;*/
+/*    background: url(https://s.plurk.com/plurktop/6b393589b1d3b4aa0499.png);*/
+/*}*/
 #anonymous .desc {
     background: #e7ddd0;
 }
@@ -861,7 +861,7 @@ body.nologin #layout_content {
     background: hsl(203, 52%, 15%);
 }
 #nologin .nologin-background {
-    background: url(https://s.plurk.com/plurktop/cca928a76ee289889847.jpg);
+    background: url(background.jpg);
     background-position: center center;
     background-size: cover;
     position: absolute;
