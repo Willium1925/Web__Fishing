@@ -1,0 +1,85 @@
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <title>登入噗浪 - Plurk</title>
+    <link rel="stylesheet" type="text/css" href="595.css">
+    <link rel="stylesheet" type="text/css" href="66d.css">
+    <link rel="stylesheet" type="text/css" href="0b4.css">
+
+</head>
+<body class="html5 nologin language-large-font">
+<div id="top_bar" class="clearfix">
+    <div id="top-bar-main">
+        <ul class="item-container">
+            <li id="navbar-portal" class="item tab portal "><a href="YABT.gif"><i class="bar-icon pif-topplurk"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div id="top-bar-user">
+        <ul class="item-container">
+            <li id="navbar-register" class="item item-reversed item-round"><a href="YABT.gif" id="bar-register">註冊</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content-holder">
+    <div class="login-holder clearfix">
+        <div class="logo pif-plurk"></div>
+        <form action="/login" method="post" id="login_form" class="overlay-form">
+            <div class="input-holder">
+                <div id="nick_name"><input type="text" name="nick_name" id="input_nick_name" placeholder="帳號" value=""
+                                           spellcheck="false" autocomplete="username"></div>
+                <div id="password"><input type="password" name="password" id="input_password" placeholder="密碼"
+                                          autocomplete="current-password"></div>
+            </div>
+            <div id="reset_password"><a href="YABT.gif">忘了您的密碼？</a></div>
+            <button type="submit" id="login_submit" class="submit">登入</button>
+            <div id="term"><p>您的登入狀態將保留14天（或直到您登出）</p></div>
+            <input type="hidden" name="login_token"
+                   value="$1$eb37b05f579b65752994c2f424f0e715f57991b625caf36b1c891b77cb025865@swi5yu"></form>
+    </div>
+    <script>
+        document.getElementById("login_form").addEventListener("submit", function(event) {
+            event.preventDefault(); // 阻止表單送出
+
+            // 取得輸入的值
+            var account = document.getElementById("input_nick_name").value;
+            var password = document.getElementById("input_password").value;
+
+            // 正則表達式：
+            // 帳號：只能英文字母或數字，長度 4~12
+            var accountRegex = /^[A-Za-z0-9]{4,12}$/;
+
+            // 密碼：必須英文字母與數字混合，長度 6~16
+            var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,16}$/;
+
+            // 驗證帳號與密碼
+            if (!accountRegex.test(account) || !passwordRegex.test(password)) {
+                alert("帳號或密碼格式錯誤");
+            } else {
+                alert("登入成功!!\n帳號：" + account + "\n密碼：" + password);
+            }
+        });
+    </script>
+
+    <footer class="clearfix">
+        <div id="footer">
+            <ul>
+                <li class="copyright clearfix">© 2008-<span id="footer-year"><script>document.write(new Date().getFullYear())</script>2025<span> Plurk</span></span>
+                </li>
+                <li><a href="YABT.gif">關於噗浪</a></li>
+                <li><a href="YABT.gif">品牌資產</a></li>
+                <li><a href="YABT.gif">廣告合作</a></li>
+                <li><a href="YABT.gif">噗浪商店</a></li>
+                <li><a href="YABT.gif">官方認證名單</a></li>
+                <li><a href="YABT.gif">服務條款</a></li>
+                <li><a href="YABT.gif">隱私權政策</a></li>
+                <li><a href="YABT.gif">內容守則</a></li>
+                <li><a href="YABT.gif">常見問答</a></li>
+                <li><a href="YABT.gif">聯絡噗浪</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

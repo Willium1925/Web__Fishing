@@ -1,0 +1,197 @@
+body {
+    background: #FF574D;
+    color: #FFF;
+}
+a,
+#footer,
+#footer a {
+    color: #FFF;
+}
+#top_bar {
+    box-shadow: none;
+    z-index: 999;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.bg-logo {
+    color: #FFF;
+    font-size: 800px;
+    position: fixed;
+    z-index: 0;
+    right: -100px;
+    bottom: -100px;
+    opacity: 0.2;
+}
+.register-link {
+    float: right;
+    margin: 6px;
+    background: #FFF;
+    color: #FF574D;
+}
+.content-holder {
+    position: relative;
+    height: 100%;
+    min-height: 560px;
+}
+.login-holder {
+    padding: 20px;
+    padding-top: 10vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.login-holder .logo {
+    font-size: 60px;
+}
+.login-holder .desc {
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+#errormsg {
+    display: inline-block;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    color: #333;
+    padding: 10px 16px;
+    text-align: left;
+    line-height: 1.6;
+}
+#errormsg a {
+    color: #FF574D;
+}
+#errormsg ul {
+    margin: 0.5em 1.5em;
+}
+#errormsg ul li {
+    list-style: circle;
+}
+.overlay-form {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.overlay-form .input-holder {
+    background: #FFF;
+    border-radius: 18px;
+    padding: 4px 10px;
+    margin-top: 40px;
+}
+.overlay-form .input-holder #nick_name {
+    border-bottom: #EEE 1px solid;
+}
+.overlay-form .input-holder > div {
+    position: relative;
+    padding: 6px 0;
+}
+.overlay-form .input-holder input {
+    width: 100%;
+    background: #FFF;
+    font-size: 18px;
+    padding: 6px 8px;
+    border: 0;
+    text-align: left;
+}
+.overlay-form .input-holder input.otp {
+    padding: 2px 5px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.overlay-form .input-holder input.otp::-webkit-input-placeholder {
+    padding: 2px 2px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.overlay-form .input-holder input.otp::-moz-placeholder {
+    padding: 2px 2px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.overlay-form .input-holder input.otp::placeholder {
+    padding: 2px 2px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.overlay-form .input-holder .error {
+    padding-right: 30px;
+}
+.overlay-form .input-holder .error:after {
+    content: "\f03e";
+    font-family: 'PlurkIconFont' !important;
+    position: absolute;
+    right: 3px;
+    color: red;
+    font-size: 16px;
+    top: 0;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+.overlay-form .submit {
+    background: #FFF;
+    color: #FF574D;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 25px;
+}
+.overlay-form .cancel {
+    background: #FF6666;
+    color: #FFF;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+.overlay-form #reset_password {
+    text-align: right;
+    margin-top: 4px;
+}
+.overlay-form #term {
+    font-size: 12px;
+    margin-top: 4px;
+}
+#reset_2fa {
+    padding-top: 64px;
+}
+#reset_2fa #otp_cancel {
+    color: #eef;
+    border-bottom: 1px solid silver;
+}
+#reset_2fa #otp_cancel:hover {
+    background: #ff574d;
+    color: yellow;
+}
+@media screen and (max-width: 900px) {
+    .bg-logo {
+        font-size: 650px;
+        right: -90px;
+        bottom: -60px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .bg-logo {
+        font-size: 400px;
+        right: -60px;
+        bottom: -30px;
+    }
+}
+@media screen and (max-height: 600px) {
+    #top_bar {
+        display: none;
+    }
+}
